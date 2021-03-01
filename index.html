@@ -25,7 +25,6 @@
 			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
 		}
 	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
 	
 	<link rel="stylesheet" href="/css/datapoets.css"/>
 	<style>
@@ -56,21 +55,10 @@
 		.grid_absolute_4x4_square  > div.griditem:nth-child(3n+1) {
 			background-color: var(--red);
 		}
-
-
-
-		/*.gridcontainer0 > div.griditem:nth-child(2n) {
-			background-color: var(--warmblack);
+		body {
+			transition: background-color 800ms linear;
 		}
-		.gridcontainer0 > div.griditem:nth-child(2n+1) {
-			background-color: var(--warmwhite);
-		}
-		.gridcontainer1 > div.griditem:nth-child(2n+1) {
-			background-color: var(--warmblack);
-		}
-		.gridcontainer1 > div.griditem:nth-child(2n) {
-			background-color: var(--warmwhite);
-		}*/
+
 	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVGDWV6HG"></script>
@@ -82,7 +70,7 @@
 		gtag('config', 'G-VPVGDWV6HG');
 	</script>
 </head>
-<body id="top" >
+<body id="top">
 
 <div id="svgframe" aria-hidden="true">
 	<svg xmlns="http://www.w3.org/2000/svg" id="svg" class="frame" ></svg>
@@ -130,23 +118,23 @@
 
 <article id="maincontent">
 	<header>
-		<h1>about us</h1>
-		<h2>the zen of asynchronous webs</h2>
+		<h1>about</h1>
 	</header>
-	<p>We specialize in creating agile, fluid, asynchronous systems and are passionate about web standards, modular development and the power of open source tools.</p>
+	<p>I specialize in creating agile, fluid, asynchronous systems. I am passionate about web standards, modular development and the power of open source tools.</p>
 
-	<p>For over a decade we have immersed in evolving semantic web technologies. Our goal is to facilitate collaboration and to create lean, accessible, adaptive software that helps you gather, share, visualize and draw insight from the information that surrounds you everyday.</p>
+	<p>Semantic web perspectives, object and relational forms, functional streams. reusable patterns are all core to my approach to code. Non-proprietary tools and the open web are the heart of what I do.
 
-	<p>Initially we worked with a Java, SQL (primarily PostgreSQL), XML / XSLT / HTML / CSS / Javascript technology set. We have shifted recently to specialize in nodeJS / expressJS, NoSQL (primarily MongoDB), JSON, Javascript, and HTML5 / CSS3.</p>
+	I build lean, accessible, adaptive software.</p>
 
-	<p>We have developed creative solutions to:</p>
+	<p>I originally employed a Java, SQL, XML / XSLT / HTML / CSS / Javascript technology stack. In recent years I shifted towards a nodeJS / expressJS, NoSQL, JSON, Javascript, and HTML5 / CSS3 toolset.</p>
+
+	<p>I have developed creative solutions to:</p>
 	<ul class="circle">
-		<li>generate multichannel video and sound environments. Our exploration of cross-media forms has moved along a continuum from the production of print books and recorded sound / fixed video work into creating transmedia landscapes which flow from the digital web into physical installation and performance spaces</li>
+		<li>generate multichannel video and sound environments. My exploration of cross-media forms has moved along a continuum from the production of print books and recorded sound / fixed video work into creating transmedia landscapes which flow from the digital web into physical installation and networked performance spaces</li>
 		<li>simulate, visualize, and assess the impact of various environmental stressors on ecosystem dynamics</li>
 		<li>provide training and technical assistance to a geographically-dispersed community of social-change / social-service organizations</li>
 		<li>provide a HIPAA-compliant supports planning system that improves supports planning, service delivery, and outcome measurement in disabilities services. This application includes client assessment tools, service delivery and incident reporting, human resource and training modules and an online resource library. It is delivered using an application service provider model that allows the client to provide real-time information to a distributed user base via the web. Its role-based security model delivers information tailored to the user on a need-to-know basis and allows the organization to provide exactly the tools needed to facilitate specific job responsibilities.</li>
 	</ul>
-	
 </article>
 
 
@@ -186,7 +174,6 @@ let z = getz();
 		console.log("window.innerWidth = " + window.innerWidth);
 
 		let dx = width/4, dy = height/4;
-		
 	});
 
 	let count = 0;
@@ -215,6 +202,22 @@ let z = getz();
 			el.style.transform =  scale;   
 		}, j*100+2000);
 	});
+
+	( () => {
+		const body = document.querySelector("body");
+		let colors = [["warmblack",4], ["warmwhite",4], ["red",2], ["yellow",1]].reduce( (acc, color, j) => {
+			Array.prototype.push.apply(acc,[...Array(color[1]).keys()].reduce( (acc2,k) => { acc2.push(color[0]); return acc2 },[]) );
+			return acc;
+		}, []);
+		window.setInterval(() => { 
+			let color = colors[z.tools.randominteger(0,colors.length)];
+			z.tools.logmsg("color = " + color);
+			body.style.backgroundColor = "var(--"+color+")";
+		}, 8000);
+
+	})()
+
+
 })();
 
 </script>
