@@ -22,6 +22,37 @@
 	/*colors :: set these to color sets in code*/
 	--color1: var(--warmblack);
 	--color2: var(--warmwhite);
+	--color3: var(--warmblack);
+	--color4: var(--warmwhite);
+	--color5: var(--warmblack);
+	--color6: var(--warmwhite);
+	--color7: var(--warmblack);
+	--color8: var(--warmwhite);
+	--color9: var(--warmblack);
+	--color10: var(--warmwhite);
+	--color11: var(--warmblack);
+	--color12: var(--warmwhite);
+	--color13: var(--warmblack);
+	--color14: var(--warmwhite);
+	--color15: var(--warmblack);
+	--color16: var(--warmwhite);
+	
+	--bgcolor1: var(--warmwhite);
+	--bgcolor2: var(--warmblack);
+	--bgcolor3: var(--warmwhite);
+	--bgcolor4: var(--warmblack);
+	--bgcolor5: var(--warmwhite);
+	--bgcolor6: var(--warmblack);
+	--bgcolor7: var(--warmwhite);
+	--bgcolor8: var(--warmblack);
+	--bgcolor9: var(--warmwhite);
+	--bgcolor10: var(--warmblack);
+	--bgcolor11: var(--warmwhite);
+	--bgcolor12: var(--warmblack);
+	--bgcolor13: var(--warmwhite);
+	--bgcolor14: var(--warmblack);
+	--bgcolor15: var(--warmwhite);
+	--bgcolor16: var(--warmblack);
 	/*other*/
 	--zhighest: 8888;
 	--zhigher: 4444;
@@ -61,7 +92,7 @@
 	--actionhoverborderleft: 2px var(--highlightcolor1) solid;
 	--actionhoverborderright: 2px var(--highlightcolor2) solid;
 	--actionhoveroutline: solid 4px var(--warmgray);
-	--actionhoveroutlineoffset: .5em;
+	--actionhoveroutlineoffset: .5rem;
 
 	--narratorfont: var(--sans);
 	--zerofont: var(--monospace_zeroslash);
@@ -70,71 +101,81 @@
   	--scribefont: var(--typewriter);
   	--nrows: 4; --ncols: 4;
 	--corefont: var(--sans);
-  	--corefontsize: 18px;
+  	/*--corefontsize: 18px;*/
+  	--corefontsize: 1rem;
+  	--coreletterspacing: 0.2rem;
   	--corefontweight: 500;
   	--corefontweightbold: 600;
-  	--corelineheight: 38px;
+  	--corelineheight: 2.1rem;
+}
+/*from ::: https://github.com/hankchizljaw/modern-css-reset/blob/master/src/reset.css*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p, div,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; padding: 0; border: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+/*@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}*/
 /* browser fonts ::: https://blog.hubspot.com/website/web-safe-html-css-fonts */
 html {
 	font-family: var(--corefont);
 	font-weight: var(--corefontweight);
 	font-size: var(--corefontsize);
 	line-height: var(--corelineheight);
-	letter-spacing: 0.1em;
-	margin: 0;padding: 0;border: 0;
-	vertical-align: baseline;
-	min-width:100%;
-	min-height:100%;
+	letter-spacing: var(--coreletterspacing);
+	vertical-align: baseline; /*baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit*/
 }
-@media only screen and (max-width: 900px) {
-	html {
-		font-size: 16px;
-	}
-}
-@media only screen and (max-width: 480px) {
-	html {
-		font-size: 14px;
-		line-height: 19px;
-		letter-spacing: 0.12em;
-	}
-}
-
 .underline {
 	text-decoration: underline;
 }
 i, .italic { font-style: italic; }
 small, .small { font-size: 0.8em; }
 em, .bold { font-weight: var(--corefontweightbold); }
-.zhighest {
-	z-index: 8888;
-	z-index: var(--zhighest);
-}
-.zhigher {
-	z-index: 4444;
-	z-index: var(--zhigher);
-}
-.zhigh {
-	z-index: 2222;
-	z-index: var(--zhigh);
-}
-.z0 {
-	z-index: 0;
-	z-index: var(--z0);
-}
-.zlow {
-	z-index: -2222;
-	z-index: var(--zlow);
-}
-.zlower {
-	z-index: -4444;
-	z-index: var(--zlower);
-}
-.zlowest {
-	z-index: -8888;
-	z-index: var(--zlowest);
-}
+
 .tickertape__zerodot {
 	font-family: var(--monospace_zerodot);
 	position: absolute;
@@ -143,41 +184,25 @@ em, .bold { font-weight: var(--corefontweightbold); }
 	transform-origin: 50% 50% 0;
 }
 body { 
-	margin: 0; padding: 0; border: 0;
-	padding: 0px 0px;
 	background-color: var(--warmgray);
-	/*background-color: var(--corebg);*/
+	background-color: var(--corebg);
   	color: var(--corecolor);
 	top:0; left:0;
 	width:100%; height: 100%;
-	min-width:100%;
-	min-height:100%;
-	text-align:left;
-	letter-spacing: 0.1em;
+	min-width:100%; min-height:100%;
+	direction: ltr; /*ltr|rtl|initial|inherit*/
+	text-align:left; /*left|right|center|justify|initial|inherit*/
+	overflow: auto; /*visible|hidden|scroll|auto|initial|inherit*/
 }
-#hidetext {
-	position: fixed;
-	top: 0; left: 0;
-	font-size: 3em;
-	padding-left:10px;
-	padding-left:1rem;
-	opacity:0.6;
-	color: var(--warmwhite);
-	z-index: var(--zhighest);
+article {
+	padding: 1.4rem;
 }
-body.frame {
-	position: fixed;
-	top: 0; left: 0;
-	vertical-align: top; text-align: left;
-	margin: 0;
-	width: 100%; height: 100%;
-	min-width: 100%; max-width: 100%;
-	min-height: 100%; max-height: 100%;
-	padding: 0% 0% 0% 0%;
-	overflow: auto;
-	background-color: transparent;
-	perspective: 50px;
-	transform-origin: 50% 50% 0;
+p {
+	margin-top: .8rem;
+	margin-bottom: .8rem;
+}
+div {
+  margin-bottom: 1rem;
 }
 div.absolute, div.shape, #veilframe {
 	position: absolute;
@@ -190,15 +215,14 @@ div.absolute, div.shape, #veilframe {
 	position: fixed;
 	top: 0; left: 0;
 	vertical-align: top; text-align: left;
-	margin: 0;
 	width: 100%; height: 100%;
 	min-width: 100%; max-width: 100%;
 	min-height: 100%; max-height: 100%;
-	padding: 0% 0% 0% 0%;
 	overflow: hidden;
 	background-color: transparent;
 	perspective: 50px;
 	transform-origin: 50% 50% 0;
+	transform: translate3d(0, 0, 0);
 }
 #svgframe {
 	z-index: var(--zlowest);
@@ -229,20 +253,17 @@ div.absolute, div.shape, #veilframe {
 	transform: translate(-50%, 0%);
 	transition: opacity 1s ease-in-out;
 	background-color: var(--coreveilbg);
-}
-#contentframe {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	justify-content: center;
-	align-items: baseline; /* flex-start */
-	align-content: space-around;
+	flex-wrap: wrap; /*nowrap|wrap|wrap-reverse|initial|inherit*/
+	flex-direction: row; /*row|row-reverse|column|column-reverse|initial|inherit*/
+	justify-content: center; /*flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit*/
+	align-items: baseline; /* stretch|center|flex-start|flex-end|baseline|initial|inherit */
+	align-content: space-around; /*stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit*/
 }
 main {
 	position: relative;
 	width:100%;
-	padding: 1em;
+	padding: 1rem;
 	transition: opacity 1s ease-in-out;
 	border: 0px;
 }
@@ -255,7 +276,6 @@ footer {
 }
 #contentframe.highcontrast {
 	background-color: var(--corebg);
-	color: var(--corecolor);
 }
 #contentframe.hidebg {
 	background-color: transparent;
@@ -263,7 +283,6 @@ footer {
 #contentframe.largetext {
 	font-size: 1.4rem;
 }
-
 .gallery {
 	min-width: 95%;
 	display: flex;
@@ -275,7 +294,6 @@ footer {
 	align-content: space-around;
 }
 .gallery > img {
-	max-width: 400px;
 	max-width: 32%;
 	min-width: 300px;
 }
@@ -294,75 +312,52 @@ footer {
 	position: static;
 	margin: auto;
 }*/
-form {
-  width: 600px;
-  margin: 0 auto;
-}
-div {
-  margin-bottom: 10px;
-}
 
-article {
-	padding: 1em;
-}
-.optimize {
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	-webkit-transform: scale3d(1,1,1);
-	transform: scale3d(1,1,1);	
-}
+
 
 body main > header {
-	margin-bottom: 2em;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }
 h1 {
-	margin: 0px;
-	margin-top: .4em;
-	margin-bottom: .2em;
-	/*padding-left: 1em;
-	padding-right: 1em;*/
-	/*font-weight: bold;*/
-	/*font-weight: normal;*/
+	margin-top: 1em;
+	margin-bottom: 1em;
 	font-weight: var(--corefontweightbold);
-	font-size: 1.4em;
-	line-height: 1.4em;
-	letter-spacing: .2em;
+	font-size: 1.8rem;
+	letter-spacing: .4rem;
 	font-family: var(--monospace_zeroslash);
 }
 body main > header > h1 {
-	font-size: 2.4em;
+	font-size: 3rem;
 }
 h2 {
-	margin: 0px;
-	margin-bottom: .4em;
+	margin-bottom: .4rem;
 	font-family: var(--monospace_zeroslash);
 	font-weight: var(--corefontweight);
 	font-style: italic;
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
 }
 body main > header > h2 {
-	font-size: 1.3em;
-	line-height: 1.5em;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
 	font-style: italic;
 }
 h3 {
 	font-weight: var(--corefontweight);
-	margin: 0px;
-	margin-bottom: 0.8em;
-	font-size: 1em;
-	line-height: 1.1em;
+	margin-bottom: 0.8rem;
+	font-size: 1rem;
+	line-height: 1.1rem;
 }
 body main > header > h3 {
-	font-size: 2em;
-	line-height: 1.2em;
+	font-size: 2rem;
+	line-height: 1.2rem;
 }
 h5 {
-	margin: 0px;
-	margin-top: 1em;
-	margin-bottom: 0.6em;
-	font-size: 1.2em;
-	line-height: 1em;
+	margin-top: 1rem;
+	margin-bottom: 0.6rem;
+	font-size: 1.2rem;
+	line-height: 1rem;
 	font-weight: var(--corefontweightbold);
 	font-family: Monaco, 'Andale Mono', AndaleMono, Courier, monospace;
 	font-family: var(--monospace_zeroslash);
@@ -383,6 +378,7 @@ hr {
 	flex-basis: auto; /* or a value 150px; */
 	align-self:  auto; /* || flex-start || flex-end || center || baseline || stretch */
 }
+
 ul.circle, ol.circle, dl.circle {
 	margin-left:1rem;
 	list-style: circle;
@@ -453,15 +449,6 @@ ol {
 	list-style-type: decimal;
 }
 
-p {
-	margin: 0;
-	margin-top: .8em;
-	margin-bottom: .8em;
-	/*line-height: var(--corelineheight);*/
-}
-div {
-	line-height: var(--corelineheight);
-}
 pre {
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
@@ -781,6 +768,11 @@ div.vimeowrapper16x9 iframe {
 .grid_absolute_4x4_square > div.griditem:nth-child(n+5) { top: calc(25vh + 12.5vh - 12.5vmin); }
 .grid_absolute_4x4_square > div.griditem:nth-child(n+9) { top: calc(50vh + 12.5vh - 12.5vmin); }
 .grid_absolute_4x4_square > div.griditem:nth-child(n+13) { top: calc(75vh + 12.5vh - 12.5vmin); }
+
+#divframe > div:nth-child(1) > div.griditem:nth-child(1) { 
+	color: var(--warmwhite);
+	background-color: var(--warmblack);
+}
 
 @media print {
 	#menu, #nav, #sidebar, #sidebar-wrapper { display:none}
