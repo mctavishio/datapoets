@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>datapoets</title>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-	<meta name="description" content="net.art web hypermedia algorithmic mctavish generative old-school code : the empty ladder"/>
-	<meta name="author" content="kathy mctavish">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="datapoets ::: minimalist creative code" />
+	<meta name="keywords" content="mctavish net.art generative algorithmic code electronic literature web" />
+	<meta name="author" content="datapoets">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,139 +17,209 @@
 			"@context": "http://schema.org",
 			"@type": "WebPage",
 			"name": "datapoets",
-			"breadcrumb": "datapoets > datapoets",
-          	"url": "datapoets.work",
-			"description": "net.art web hypermedia algorithmic mctavish generative old-school code : the empty ladder",
-			"datePublished": "Fri Jun 23 2023 11:27:59 GMT-0500 (Central Daylight Time)",
-          	"image": "https://mctavish.work//apple-touch-icon.png",
-			"author": "https://mctavish.studio/bio.html",
-			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en.US"
+			"breadcrumb": "datapoets > index",
+          		"url": "http://www.datapoets.com/index.html",
+			"description": "datapoets ::: minimalist creative code",
+			"datePublished": "2021-02-18",
+          		"image": "https://www.datapoets.com/apple-touch-icon.png",
+			"author": "http://datapoets.com",
+			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
 		}
 	</script>
 	
-	<!-- Google Analytics -->
-	<link rel="stylesheet" href="/css/fieldnotes.css"/>
-
+	<link rel="stylesheet" href="/css/datapoets.css"/>
 	<style>
-  		body {
-			background: var(--warmblack);
+		.grid_absolute_4x4_rect > div.griditem:nth-child(3n) {
+			background-color: var(--warmblack);
 		}
-  		main {
-			background: var(--warmgray);
+		.grid_absolute_4x4_rect > div.griditem:nth-child(3n+1) {
+			background-color: var(--warmwhite);
 		}
+		.grid_absolute_4x4_rect  > div.griditem:nth-child(3n+2) {
+			background-color: var(--red);
+		}
+		.grid_absolute_4x4_circle > div.griditem:nth-child(3n+1) {
+			background-color: var(--warmblack);
+		}
+		.grid_absolute_4x4_circle > div.griditem:nth-child(3n+2) {
+			background-color: var(--warmwhite);
+		}
+		.grid_absolute_4x4_circle  > div.griditem:nth-child(3n) {
+			background-color: var(--red);
+		}
+		.grid_absolute_4x4_square > div.griditem:nth-child(3n+2) {
+			background-color: var(--warmblack);
+		}
+		.grid_absolute_4x4_square > div.griditem:nth-child(3n) {
+			background-color: var(--warmwhite);
+		}
+		.grid_absolute_4x4_square  > div.griditem:nth-child(3n+1) {
+			background-color: var(--red);
+		}
+		body {
+			transition: background-color 800ms linear;
+		}
+
 	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVGDWV6HG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-</head><body id="top">
-<div id="subtextframe" class="frame zlowest"></div>
-<div id="svgframe" class="frame zlow">
-<svg xmlns="http://www.w3.org/2000/svg" id="svg" 
-class="frame">
-</svg></div>
-<!--<div id="wordframe" class="frame z0"></div>-->
-<div id="contentframe" class="absolute zhighest">
+		gtag('config', 'G-VPVGDWV6HG');
+	</script>
+</head>
+<body id="top">
 
-<div id="mainflex">
-<main id="main" style="opacity:0.6">
+<div id="svgframe" aria-hidden="true">
+	<svg xmlns="http://www.w3.org/2000/svg" id="svg" class="frame" ></svg>
+</div>
+<div id="divframe" aria-hidden="true">
+<div id="canvas0" class="grid_absolute_4x4_rect" aria-hidden="true">
+	<div id="l0r0c0" class="griditem"></div><div id="l0r0c1" class="griditem"></div><div id="l0r0c2" class="griditem"></div><div id="l0r0c3" class="griditem"></div>
+	<div id="l0r1c0" class="griditem"></div><div id="l0r1c1" class="griditem"></div><div id="l0r1c2" class="griditem"></div><div id="l0r1c3" class="griditem"></div>
+	<div id="l0r2c0" class="griditem"></div><div id="l0r2c1" class="griditem"></div><div id="l0r2c2" class="griditem"></div><div id="l0r2c3" class="griditem"></div>
+	<div id="l0r3c0" class="griditem"></div><div id="l0r3c1" class="griditem"></div><div id="l0r3c2" class="griditem"></div><div id="l0r3c3" class="griditem"></div>
+</div>
+<div id="canvas1" class="grid_absolute_4x4_square" aria-hidden="true">
+	<div id="l1r0c0" class="griditem"></div><div id="l1r0c1" class="griditem"></div><div id="l1r0c2" class="griditem"></div><div id="l1r0c3" class="griditem"></div>
+	<div id="l1r1c0" class="griditem"></div><div id="l1r1c1" class="griditem"></div><div id="l1r1c2" class="griditem"></div><div id="l1r1c3" class="griditem"></div>
+	<div id="l1r2c0" class="griditem"></div><div id="l1r2c1" class="griditem"></div><div id="l1r2c2" class="griditem"></div><div id="l1r2c3" class="griditem"></div>
+	<div id="l1r3c0" class="griditem"></div><div id="l1r3c1" class="griditem"></div><div id="l1r3c2" class="griditem"></div><div id="l1r3c3" class="griditem"></div>
+</div>
+<div id="canvas2" class="grid_absolute_4x4_circle" aria-hidden="true">
+	<div id="l1r0c0" class="griditem"></div><div id="l1r0c1" class="griditem"></div><div id="l1r0c2" class="griditem"></div><div id="l1r0c3" class="griditem"></div>
+	<div id="l1r1c0" class="griditem"></div><div id="l1r1c1" class="griditem"></div><div id="l1r1c2" class="griditem"></div><div id="l1r1c3" class="griditem"></div>
+	<div id="l1r2c0" class="griditem"></div><div id="l1r2c1" class="griditem"></div><div id="l1r2c2" class="griditem"></div><div id="l1r2c3" class="griditem"></div>
+	<div id="l1r3c0" class="griditem"></div><div id="l1r3c1" class="griditem"></div><div id="l1r3c2" class="griditem"></div><div id="l1r3c3" class="griditem"></div>
+</div>
+
+</div>
+
+<div id="subtextframe" aria-hidden="true"></div>
+
+<div id="contentframe" aria-hidden="true">
+<main id="main">
 <header>
 	<h1>datapoets</h1>
-	<h2>...coming soon</h2>
 </header>
 <nav>
-	<ul>
+	<ul class="stanza">
 		<!-- <li><a href="#maincontent" id="skiptomaincontent">skip to main content</a></li> -->
-		<li><a href="https://mctavish.work/index.html" id="homelink">go to mctavish portfolio</a></li>
+		<!-- <li><a href="index.html" id="homelink">return home</a></li> -->
+		<li><a href="#dashboard" id="gotodashboard">access dashboard</a></li>
 	</ul>
 </nav>
+
 <div class="screenreader-text">
 	<p>Your feedback is always welcome.</p>
 </div>
 
-		<article>
-		<header>
-		<h1>man</h1>
-		</header>
-		<p>
-		man plan swarm landmarks grand _ man flag walls tall scar crash flash transact : cat last-day wards arts landmarks catalysts small lack radar barn hat trashcan dams :# clap . calls wash salt half 
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>or</h1>
-		</header>
-		<p>
-		or attracting microfiche checkerboard 0 exchange<br/> residue in recitation constellation isocline ze<br/> & probabilities absence conjunction routes pulse
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>drew</h1>
-		</header>
-		<p>
-		drew we tree . type held bells tenets key bender stem & sentence ever rhyme tent well tent chest chess -&: september checker jet x dyke elements melt net sedge set science depth needle nest tree 
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>coffee</h1>
-		</header>
-		<p>
-		coffee chains circulations & sea stoichiometric<br/> one transformation air sequestration cipher map<br/> latch rushes the no 0 ray transmitter day chaos
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>fragmentation</h1>
-		</header>
-		<p>
-		fragmentation the digital mark transformation +<br/>sequestrate 0 breathing our stem 3:48 > summary<br/>sky ! is some gathering > specimen & recordings<br/>constrained strings down connotations frequency<br/>vertex & spark metallic reverberate passenger to<br/>transmission weights day & or connectance river<br/>arterial ^ seismograph complexity phosphorous ~<br/>stretch : stoichiometric or revealed _ nonlinear<br/>transmission . unprecedented photosynthesis to ^<br/>no shortwave choreographies formula ray form on<br/>worn flow every dry temperature sent reed field<br/>node configurations orbits oscilloscope mapping<br/>any again . not & modulation conservation number<br/>manual transformation repeat null recitation &&<br/>current carbon encoded circulate noise x _ with<br/>photosynthesis not re x (ze)ro . identification<br/>by coordinates or time collections near physics<br/>be generative in film is spinning proliferation<br/>systems 0 connotations tightrope shelf co2 thief<br/>foundry shape illuminate angel plow hour singer<br/>^ ghostly constellations memory empty ~ particle<br/>inscrutable too in strings # 0 blade currencies<br/>cardinalities linguistics bowl light velocities<br/>if contours black census _ # to gatherer clouds<br/>photosynthetic the && hum 0 blades extinction &<br/>graph no sketchpad evolution > no chatter x one<br/>rinse antenna && transcription was web catching<br/>collection never reclamation transcription back<br/>fragmentation ~ friction fragmentation unsteady<br/>sequestration sky conditions molecular geologic<br/># chlorophyll not retrieving + liminal gap then<br/>phonetics web # alphabet zero cardinalities orb<br/>paper headlights uptake recordings invisible or<br/>no alphabet & braille node broke transmigration<br/>apoplectic one to rider cast x . ::: computation<br/>vertex glance & companion assemblage _ recording<br/>column goods science predicate i the now insects<br/>iterations to # turnstile i _ steady repetition<br/>transect in configurations nomad fire so or log<br/>_ constellation the branch corridors compression<br/>multiplicity ~ nets lost reception transition by<br/>is system subway resilience oscillations _ this<br/>configurations reflection researcher disk x one<br/>transmission rhythm ^ sky highway mapping chaos<br/>transmission transmission ^ ~ stoichiometric row<br/>birds hyperspace (re)creation electrical 0 & be<br/>blood scrawled thunder x skull pasture counting<br/>heterotrophs retry arithmetics pool supermarket<br/>in conflagration time theater in transformation<br/>mineralization 0 associative the fix recitation<br/>tube why watches biomass loop repair(*man) fold<br/>electricity ruptured released transmission ! =><br/>constellation probabilities & field not sandwich<br/>energy signal 0 knowledge fragmentation => cast<br/>movement feather _ transformation mineralization<br/>titrations ! 0 in electrified edge microscope is<br/>dinosaurs axe matrices > # pillars bifurcations<br/>archive in ^ red nonlinear orchestration 0 radio<br/>transmission ! skeleton orb light & conservation<br/>windshield observatory stoichiometric colossal _<br/>observer essence not mathematics not # catalogue<br/>|| intersections ze map navigation day : prayer<br/># _ cloth functions stoichiometric constellation<br/>encode divine again to at syntax gap rider away<br/>root electrify .& constellation transmission in<br/>our into only # not cycle electric masks number<br/>red traveler the beat mycorrhiza arithmetics in<br/>proclaim intact double reweave . gallery _ queer<br/>passenger in constellations stoichiometric in 0<br/>on 1958 (re)creation + destinations progressions<br/>translation ze fragmentation sparse || struts #<br/>shape photosynthesis temperature interaction re<br/>set probabilities & 0 0 no ~ constellations past<br/>^ picture text adaptable odometer cast ! :: & ><br/>sound signals spoken action co2 conversion if ^<br/>pulse conservation irretrievable algorithms the<br/>orchestration choreographies ze data visceral #<br/>phase footnotes yellow : vinyl crisis metrics ^<br/>(re)cover handbook the blinking constellation x<br/>industry(!) our circle & reverberate field film<br/>greasy photosynthetic together stoichiometric #<br/>! were hand & faster || at minerals distillation<br/>prairie resonating matrix ^ matrix incompatible<br/>transcription transformation i 0 & polychromatic<br/>spoken & or stem suitcase wind incantation state<br/>transcription saturn . ~ intelligence no ladder<br/>net enactments structure ~ distilled approach &<br/>top _ sandwich ^ (re)enactment body abstraction<br/>cantor collision vein nomad last not + data the<br/>passenger suspended _ (re)enactment transference<br/>our adaptations sky not irretrievable path helm<br/>& chords dial in & the our swings velocity like<br/>receiver like & computable plant pocket talking<br/>the correct season gears resolution > > wire :::<br/>estimation _ > photosynthetic _ compression was<br/>sine efficiency blade ! wire information greasy<br/>in punctuations filament the left transcription<br/>transcriptions observer map 0 observation 0 one<br/># on distillation loom was sensitive separating<br/>the intersections instability in > bifurcations<br/>classifiers discontinuity is stop stem rhythm :<br/>multiplicity probabilistic ghosts transcription<br/>inflorescent restoration on illumination vertex<br/>moth ze breaking membrane recitation literature<br/>goal stick sandwich cataclysmic indecipherable 0<br/>& transcription approximation deep circulations<br/>sow > photosynthesis spline circulations leaders<br/>stolen _ chlorophyll bird miles incantation cave<br/>atmospheric release & ink on plastic microfiche<br/>transects marks ~ profile n-body frames hero to<br/>trophic insurrection bird dissonant passenger ^<br/>transmigration retrieving transmigration 0 of ><br/>beats ash x dew length resilience transformation<br/>> connotations essence breadth disk regenerative<br/>yesterday mourning cybernetic choreographies on<br/>construction growth probabilities ze bus energy<br/>on observation configurations net (re)enactment<br/>transmission reed efficiency ze # irretrievable<br/>weather restore nothing cybernetics # passenger<br/>stoichiometric out emergence probabilities bird<br/>2d gathered by 0 entropy difficult switch at or<br/>|| 0 theater the under meditations frequencies :<br/>bones : separating filament ze the sequestration<br/>polychromatic cybernetics echo _ catalogue _ on<br/>light x (re)enactment stoichiometric reformation<br/>liberation alone 0 that transmission subtraction<br/>fractionated never over > ze photo semisynthetic<br/>~ chain oracles fractionated bird de roulette _<br/>transcription to verb wood art cardinalities to<br/>hue engine voice observation vital lay on chaos<br/>halogen sky > sequestration leaf transact ::: ><br/>were knowledge photosynthetic velocities fire +<br/>literature overlayment science rhizome brown in<br/>twist release connotations geologies adaptation<br/>chlorophyll stolen : the radio insurrection door<br/># production approximation past resinous this ~<br/>rhythm traversal progressions ze memory ^ map 0<br/>composable > re die in construction reenactment<br/>sea seismograph recordings the breaking alley ^<br/>resurrection repeat photosynthetic zero encoded<br/>theorems difference stoichiometric minerals of 0<br/>soil constellations transcribe the coffee tonal<br/>repairman bone hidden discontinuity > invisible<br/>cardinalities conjunction > structures equations<br/>heterotrophs isotope circus 0 chlorophyll rewind<br/>category heavens on night 0 reclamation weather<br/>entanglement this + semisynthetic filter tackle<br/>cardinalities transmission grass astronomies or<br/>
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>jazz</h1>
-		</header>
-		<p>
-		jazz flat was scar lamp hall saw plan data :- mask dark :~< gay malls warp and : can sack +x ahab draw bars am hat wax am transact . drawn +=> clap mast +^ latch cat pathways stamp | clasp car 
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>husks</h1>
-		</header>
-		<p>
-		husks dust churn bus flux study bulb rust hunt junk trucks pull put burn slung hunt jump gun & cups flung full _=- murky us gut blur . bulk lungs dust sun fur +> struck cups fungus struck =~< 
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>emergency</h1>
-		</header>
-		<p>
-		emergency klezmer stems redeem herself tents cement dwell stems science where dwell stem resplendent text essence messenger essence tenders weld tent &|| mesh ledger reverse december lever where 
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>spill</h1>
-		</header>
-		<p>
-		spill wish twist hill |- swiftly links spill fists circling .~ striking miss its _#. limit tiny & din pin grip think spills _ in with living wind pinning slight first in birth script writing ringing <&_ 
-		</p><hr/>
-		</article>
-		<article>
-		<header>
-		<h1>null</h1>
-		</header>
-		<p>
-		null duluth rusty bulk cup bury push us turns |~ lucky dusty dust = bulb buzz up = rusty murky = curl turns dusk lung wrung bully blur .x| just pull thrum dusty blur push push -| duty struts rungs 
-		</p><hr/>
-		</article>
+<article id="maincontent">
+	<header>
+		<h1>about</h1>
+	</header>
+	<p>I specialize in creating agile, fluid, asynchronous systems. I am passionate about web standards, modular development and the power of open source tools.</p>
+
+	<p>Semantic web perspectives, object and relational forms, functional streams. reusable patterns are all core to my approach to code. Non-proprietary tools and the open web are the heart of what I do.
+
+	I build lean, accessible, adaptive software.</p>
+
+	<p>I originally employed a Java, SQL, XML / XSLT / HTML / CSS / Javascript technology stack. In recent years I shifted towards a nodeJS / expressJS, NoSQL, JSON, Javascript, and HTML5 / CSS3 toolset.</p>
+
+	<p>I have developed creative solutions to:</p>
+	<ul class="circle">
+		<li>generate multichannel video and sound environments. My exploration of cross-media forms has moved along a continuum from the production of print books and recorded sound / fixed video work into creating transmedia landscapes which flow from the digital web into physical installation and networked performance spaces</li>
+		<li>simulate, visualize, and assess the impact of various environmental stressors on ecosystem dynamics</li>
+		<li>provide training and technical assistance to a geographically-dispersed community of social-change / social-service organizations</li>
+		<li>provide a HIPAA-compliant supports planning system that improves supports planning, service delivery, and outcome measurement in disabilities services. This application includes client assessment tools, service delivery and incident reporting, human resource and training modules and an online resource library. It is delivered using an application service provider model that allows the client to provide real-time information to a distributed user base via the web. Its role-based security model delivers information tailored to the user on a need-to-know basis and allows the organization to provide exactly the tools needed to facilitate specific job responsibilities.</li>
+	</ul>
+</article>
+
+
+<fieldset id="dashboard">
+<legend>access dashboard</legend>
+<!-- <label for="sound"><input id="sound" type="checkbox"> play sound</label> -->
+<label for="highcontrast"><input id="highcontrast" type="checkbox"> high contrast</label>
+<label for="largetext"><input id="largetext" type="checkbox"> large text</label>
+<label for="darklight"><input id="darklight" type="checkbox"> dark / light</label>
+</fieldset>
+
 </main>
-</div>
 <footer>
-<!--<p><a href="#top" class="corelink">^ back to top</a></p>-->
+<p id="animationcontrols" style="min-width:100%">
+<label for="animationonly"><input id="animationonly" type="checkbox"> animation only (hide text)</label>
+</p>
+<p><a href="#top" class="corelink">^ back to top</a></p>
 </footer>
 </div> <!-- end contentframe -->
+<div id="veilframe" aria-hidden="true"></div>
 </body>
-<script src="/code/core.js"></script>
+<script src="/code/datapoets.js"></script>
+<script>
+let z = getz();
+
+//draw
+( () => {
+
+	let width = window.innerWidth, height = window.innerHeight;
+	let max = Math.max(width, height), min = Math.min(width, height);
+	let dx = width/4, dy = height/4;
+	
+
+	window.addEventListener("resize", e => {
+		width = window.innerWidth; height = window.innerHeight;
+		max = Math.max(width, height), min = Math.min(width, height);
+		console.log("window.innerWidth = " + window.innerWidth);
+
+		let dx = width/4, dy = height/4;
+	});
+
+	let count = 0;
+	
+	document.querySelector("#canvas0").querySelectorAll(".griditem").forEach( (el,j) => {
+		window.setInterval(() => { 
+			++count; 
+			let scaleX = " scaleX("+((count+1)%20)/8+")";
+			let scaleY = " scaleY("+(21-count%20)/8+")";
+			el.style.transform = scaleX + scaleY;
+		}, j*100+3000);
+	});
+
+	document.querySelector("#canvas1").querySelectorAll(".griditem").forEach( (el,j) => {
+		window.setInterval(() => { 
+			++count; 
+			let scaleX = " scaleX("+((count+1)%20)/10+")";
+			let scaleY = " scaleY("+(21-count%20)/10+")";
+			el.style.transform = scaleX + scaleY;
+		}, j*100+1000);
+	});
+	document.querySelector("#canvas2").querySelectorAll(".griditem").forEach( (el,j) => {
+		window.setInterval(() => { 
+			++count; 
+			let scale = " scale("+( (count+1)%20)/20+")";
+			el.style.transform =  scale;   
+		}, j*100+2000);
+	});
+
+	( () => {
+		const body = document.querySelector("body");
+		let colors = [["warmblack",4], ["warmwhite",4], ["red",2], ["yellow",1]].reduce( (acc, color, j) => {
+			Array.prototype.push.apply(acc,[...Array(color[1]).keys()].reduce( (acc2,k) => { acc2.push(color[0]); return acc2 },[]) );
+			return acc;
+		}, []);
+		window.setInterval(() => { 
+			let color = colors[z.tools.randominteger(0,colors.length)];
+			z.tools.logmsg("color = " + color);
+			body.style.backgroundColor = "var(--"+color+")";
+		}, 8000);
+
+	})()
+
+
+})();
+
+</script>
 </html>
